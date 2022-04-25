@@ -27,6 +27,7 @@ h2,
 h3 {
     font-weight: 900;
     margin: 1rem 0 4rem 0;
+    line-height: 1.2;
 }
 
 h1 {
@@ -106,7 +107,7 @@ img {
     font-size: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .nombre-sitio {
         font-size: 5rem;
     }
@@ -116,7 +117,7 @@ img {
     font-weight: 900;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .barra {
         display: flex;
         justify-content: space-between;
@@ -130,7 +131,7 @@ img {
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .contacto {
         align-items: flex-end;
     }
@@ -164,7 +165,7 @@ img {
     margin-top: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navegacion {
         display: flex;
         flex-direction: row;
@@ -179,7 +180,7 @@ img {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navegacion a {
         padding: 1rem 2rem;
     }
@@ -194,7 +195,7 @@ img {
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .slogan {
         text-align: right;
     }
@@ -205,7 +206,7 @@ img {
     margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .slogan h1 {
         font-size: 5rem;
     }
@@ -214,4 +215,37 @@ img {
 .slogan p {
     margin: 0;
     text-align: 1;
+}
+
+
+/** Sobre Nosotros**/
+
+.nosotros {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media (min-width: 992px) {
+    .nosotros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.contenido-nosotros {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+@media (min-width: 992px) {
+    .contenido-nosotros {
+        grid-column: 2 / 4;
+    }
+}
+
+.contenido-nosotros h2,
+.contenido-nosotros p {
+    margin-bottom: 1rem;
 }
